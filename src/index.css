@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: url(/img/PaperCutContour.png) no-repeat;
-  background-size: 100%;
+  background-size: auto;
   min-height: 100%;
 }
 
