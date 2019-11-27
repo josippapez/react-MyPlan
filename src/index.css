@@ -1,12 +1,38 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(/img/PaperCutContour2.png) no-repeat;
+  background: url(/img/PaperCutContour.png) no-repeat;
   background-size: 100%;
+  min-height: 100%;
 }
 
 #notifications-title{
-  filter: invert(1);
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
+form{
+  padding: 20px;
+  margin-top: 50px;
+}
+form button, form h5{
+  margin: 20px 0;
+}
+a.btn{
+  background-color: orange;
+}
 
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #00e226;
+  box-shadow: none;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label{
+  color: #00e226 !important;
+}
