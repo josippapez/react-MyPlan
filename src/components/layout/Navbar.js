@@ -6,19 +6,20 @@ import {connect} from 'react-redux';
 
 
 function Navbar(props){
-    const {isNotAuthenticated} = props;
+    const {isNotAuthenticated, profile} = props;
     return(
         <nav className="nav-wrapper grey darken-3">
             <div className="container">
                 <Link to='/' className="brand-logo">MyPlan</Link>
-                { isNotAuthenticated ? <SignedOutLinks /> : <SignedInLinks />  }
+                { isNotAuthenticated ? <SignedOutLinks /> : <SignedInLinks profile={profile}/>  }
             </div>
         </nav>
     )
 }
 const mapStateToProps=(state)=>{
     return {
-        isNotAuthenticated: state.firebase.auth.isEmpty
+        isNotAuthenticated: state.firebase.auth.isEmpty,
+        profile: state.firebase.profile
     }
 }
 export default connect(mapStateToProps)(Navbar);
