@@ -17,7 +17,7 @@ function ProjectDetails(props) {
                         <p>{project.content}</p>
                     </div>
                     <div className="card-action grey lighten-4 grey-text">
-                        <div>{project.authorFirstname} {project.authorLastname}</div>
+                        <div>{project.authorFirstName} {project.authorLastName}</div>
                         <div>1st September, 12AM</div>
                     </div>
                 </div>
