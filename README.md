@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Demo available here: [jpapez-myplan.firebaseapp.com](jpapez-myplan.firebaseapp.com)
+Demo available [HERE](https://jpapez-myplan.web.app/signin)
 
 ## Available Scripts
 
