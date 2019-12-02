@@ -11,6 +11,11 @@ body {
   text-shadow: 2px 2px 4px #000000;
 }
 .project-list{
+  overflow-y: hidden;
+  height: 50em;
+  scroll-behavior: smooth;
+}
+.project-list:hover{
   overflow-y: auto;
   height: 50em;
   scroll-behavior: smooth;
